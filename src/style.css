@@ -1,0 +1,153 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #fff3e0);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.weatherapp {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffffcc;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-form-input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #0097a7;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.search-form-button {
+  padding: 10px 20px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-form-button:hover {
+  background-color: #c2185b;
+}
+
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.weather-app-left {
+  flex: 1;
+}
+
+.weather-app-city {
+  font-family: 'Delius', cursive;
+  font-size: 32px;
+  color: #007c91;
+  margin-bottom: 8px;
+}
+
+.weather-app-details {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.weather-app-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 8px;
+}
+
+.weather-app-temperature-value {
+  font-size: 40px;
+  font-weight: bold;
+  color: #e65100;
+}
+
+/* Forecast */
+.weather-forecast {
+  margin-top: 30px;
+}
+
+.forecast-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.forecast-day {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.forecast-date {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.forecast-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast-temp {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.forecast-temp-max {
+  font-weight: bold;
+  color: #e65100;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #e91e63;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #e91e63;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

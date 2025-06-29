@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Delius&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="weatherapp">
+    <header>
+      <form class="search-form" aria-labelledby="search-city">
+        <label id="search-city" class="visually-hidden" for="city-search">Search for a city</label>
+        <input
+          type="search"
+          id="city-search"
+          placeholder="Type in a city"
+          required
+          class="search-form-input"
+          aria-label="Search for a city"
+        />
+        <input type="submit" value="Search" class="search-form-button" />
+      </form>
+    </header>
+
+    <main>
+      <div class="weather-app-data">
+        <div class="weather-app-left">
+          <h1 id="current-city" class="weather-app-city">San Antonio</h1>
+          <p id="current-date" class="weather-app-details">Thursday 12:03</p>
+          <p id="description" class="weather-app-details">Clear sky</p>
+          <p class="weather-app-details">
+            Humidity: <strong id="humidity">63%</strong>, Wind: <strong id="wind">4 mph</strong>
+          </p>
+        </div>
+        <div class="weather-app-right">
+          <img id="weather-icon" class="weather-app-icon" src="" alt="Weather icon" />
+          <div id="current-temperature" class="weather-app-temperature-value">--</div>
+        </div>
+      </div>
+
+      <div id="forecast" class="weather-forecast"></div>
+    </main>
+
+    <footer>
+      <p>
+        This project was coded by
+        <a href="https://www.shecodes.io/graduates/158174-monica-privett" target="_blank" rel="noopener noreferrer">Monica Privett</a>,
+        hosted on
+        <a href="https://github.com/SteppingStoneCake" target="_blank" rel="noopener noreferrer">GitHub</a>,
+        and deployed on
+        <a href="https://weatherapp251116.netlify.app/" target="_blank" rel="noopener noreferrer">Netlify</a>.
+      </p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="src/index.js"></script>
+</body>
+</html>
